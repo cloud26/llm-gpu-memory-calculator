@@ -1,0 +1,53 @@
+{
+  "title": "LLM Inference Memory & GPU Count Calculator",
+  "parameters": {
+    "label": "Model Parameters (B)",
+    "tooltip": "Enter the number of model parameters in billions (B). For example: 7B, 13B, 70B",
+    "selectPlaceholder": "Select example model"
+  },
+  "precision": {
+    "label": "Computation Precision",
+    "tooltip": "FP32: Single precision (4 bytes/param)\nFP16: Half precision (2 bytes/param)\nFP8: 8-bit floating point (1 byte/param)\nINT8: 8-bit integer quantization (1 byte/param)\nINT4: 4-bit integer quantization (0.5 bytes/param)"
+  },
+  "gpu": {
+    "label": "GPU Model",
+    "searchPlaceholder": "Search GPU models...",
+    "notFound": "No GPU models found"
+  },
+  "results": {
+    "modelMemory": "Model Weight Memory",
+    "inferenceMemory": "Inference Extra Memory (≈10%)",
+    "totalMemory": "Total Memory Required",
+    "requiredGPUs": "Required GPU Count",
+    "unit": "units"
+  },
+  "footer": {
+    "supportText": "If you find this tool helpful, consider buying me a coffee!"
+  },
+  "meta": {
+    "title": "LLM Inference Memory & GPU Calculator | Hardware Requirements",
+    "description": "Calculate GPU memory and count for large language models, supporting various GPU types including NVIDIA, AMD, Apple M-series, and Huawei Ascend.",
+    "keywords": [
+      "large language model",
+      "memory calculator",
+      "GPU count calculator",
+      "LLM inference",
+      "GPU memory",
+      "inference resources",
+      "precision",
+      "quantization",
+      "NVIDIA GPU",
+      "AMD GPU",
+      "Apple M-series",
+      "Huawei Ascend",
+      "DeepSeek-R1",
+      "DeepSeek-V3",
+      "Qwen",
+      "Llama",
+      "FP16",
+      "INT8",
+      "INT4",
+      "llm inference hardware calculator"
+    ]
+  }
+}

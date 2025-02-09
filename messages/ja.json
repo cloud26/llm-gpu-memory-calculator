@@ -1,0 +1,53 @@
+{
+  "title": "LLM 推論メモリ & GPU 数計算機",
+  "parameters": {
+    "label": "モデルパラメータ数（B）",
+    "tooltip": "モデルのパラメータ数を10億（B）単位で入力してください。例：7B、13B、70B等",
+    "selectPlaceholder": "サンプルモデルを選択"
+  },
+  "precision": {
+    "label": "計算精度",
+    "tooltip": "FP32：単精度浮動小数点（4バイト/パラメータ）\nFP16：半精度浮動小数点（2バイト/パラメータ）\nFP8：8ビット浮動小数点（1バイト/パラメータ）\nINT8：8ビット整数量子化（1バイト/パラメータ）\nINT4：4ビット整数量子化（0.5バイト/パラメータ）"
+  },
+  "gpu": {
+    "label": "GPUモデル",
+    "searchPlaceholder": "GPU モデルを検索...",
+    "notFound": "GPUモデルが見つかりません"
+  },
+  "results": {
+    "modelMemory": "モデル重みメモリ",
+    "inferenceMemory": "推論追加メモリ（約10%）",
+    "totalMemory": "必要な総メモリ",
+    "requiredGPUs": "必要なGPU数",
+    "unit": "台"
+  },
+  "footer": {
+    "supportText": "このツールが役立つ場合は、コーヒーを買うことを検討してください！"
+  },
+  "meta": {
+    "title": "LLM推論メモリ＆GPU計算機 | ハードウェア要件",
+    "description": "大規模言語モデルに必要なGPUメモリと数を計算。NVIDIA、AMD、Apple Mシリーズ、Huawei Ascendなど様々なGPUタイプに対応。",
+    "keywords": [
+      "大規模言語モデル",
+      "メモリ計算機",
+      "GPU数計算",
+      "LLM推論",
+      "GPUメモリ",
+      "推論リソース",
+      "精度",
+      "量子化",
+      "NVIDIA GPU",
+      "AMD GPU",
+      "Apple Mシリーズ",
+      "Huawei Ascend",
+      "DeepSeek-R1",
+      "DeepSeek-V3",
+      "Qwen",
+      "Llama",
+      "FP16",
+      "INT8",
+      "INT4",
+      "LLM推論ハードウェア計算機"
+    ]
+  }
+}

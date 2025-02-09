@@ -1,0 +1,53 @@
+{
+  "title": "LLM 추론 메모리 & GPU 수 계산기",
+  "parameters": {
+    "label": "모델 매개변수 (B)",
+    "tooltip": "모델의 매개변수 수를 십억 단위(B)로 입력하세요. 예: 7B, 13B, 70B",
+    "selectPlaceholder": "예제 모델 선택"
+  },
+  "precision": {
+    "label": "계산 정밀도",
+    "tooltip": "FP32: 단정밀도 (4바이트/매개변수)\nFP16: 반정밀도 (2바이트/매개변수)\nFP8: 8비트 부동소수점 (1바이트/매개변수)\nINT8: 8비트 정수 양자화 (1바이트/매개변수)\nINT4: 4비트 정수 양자화 (0.5바이트/매개변수)"
+  },
+  "gpu": {
+    "label": "GPU 모델",
+    "searchPlaceholder": "GPU 모델 검색...",
+    "notFound": "GPU 모델을 찾을 수 없습니다"
+  },
+  "results": {
+    "modelMemory": "모델 가중치 메모리",
+    "inferenceMemory": "추가 메모리 (≈10%)",
+    "totalMemory": "총 필요 메모리",
+    "requiredGPUs": "필요한 GPU 수",
+    "unit": "개"
+  },
+  "footer": {
+    "supportText": "이 도구가 도움이된다면 커피를 사는 것을 고려하십시오!"
+  },
+  "meta": {
+    "title": "LLM 추론 메모리 & GPU 계산기 | 하드웨어 요구사항",
+    "description": "대규모 언어 모델에 필요한 GPU 메모리와 수량을 계산. NVIDIA, AMD, Apple M 시리즈, Huawei Ascend 등 다양한 GPU 유형 지원.",
+    "keywords": [
+      "대규모 언어 모델",
+      "메모리 계산기",
+      "GPU 수 계산",
+      "LLM 추론",
+      "GPU 메모리",
+      "추론 리소스",
+      "정밀도",
+      "양자화",
+      "NVIDIA GPU",
+      "AMD GPU",
+      "Apple M 시리즈",
+      "Huawei Ascend",
+      "DeepSeek-R1",
+      "DeepSeek-V3",
+      "Qwen",
+      "Llama",
+      "FP16",
+      "INT8",
+      "INT4",
+      "LLM 추론 하드웨어 계산기"
+    ]
+  }
+}

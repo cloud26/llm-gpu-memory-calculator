@@ -1,0 +1,54 @@
+{
+  "title": "大模型推理显存与GPU数量计算器",
+  "parameters": {
+    "label": "模型参数量（B）",
+    "tooltip": "输入模型的参数量，单位为十亿（B）。例如：7B、13B、70B等",
+    "selectPlaceholder": "选择示例模型"
+  },
+  "precision": {
+    "label": "计算精度",
+    "tooltip": "FP32：单精度浮点数（4字节/参数）\nFP16：半精度浮点数（2字节/参数）\nFP8：8位浮点数（1字节/参数）\nINT8：8位整数量化（1字节/参数）\nINT4：4位整数量化（0.5字节/参数）"
+  },
+  "gpu": {
+    "label": "GPU型号",
+    "searchPlaceholder": "搜索 GPU 型号...",
+    "notFound": "没有找到匹配的 GPU 型号"
+  },
+  "results": {
+    "modelMemory": "模型权重内存",
+    "inferenceMemory": "推理额外内存（约10%）",
+    "totalMemory": "总计显存需求",
+    "requiredGPUs": "所需 GPU 数量",
+    "unit": "个"
+  },
+  "footer": {
+    "supportText": "如果您发现此工具有帮助，请考虑给我买咖啡！"
+  },
+  "meta": {
+    "title": "大模型推理显存与GPU计算器 | 硬件需求估算",
+    "description": "计算大语言模型所需的GPU显存和数量，支持NVIDIA、AMD、Apple M系列和华为昇腾等多种GPU类型。",
+    "keywords": [
+      "大模型",
+      "显存计算器",
+      "GPU数量计算",
+      "LLM推理",
+      "推理显存",
+      "GPU内存",
+      "大语言模型",
+      "参数量",
+      "量化精度",
+      "NVIDIA GPU",
+      "AMD GPU",
+      "Apple M系列",
+      "华为昇腾",
+      "DeepSeek-R1",
+      "DeepSeek-V3",
+      "Qwen",
+      "Llama",
+      "FP16",
+      "INT8",
+      "INT4",
+      "大模型推理硬件计算器"
+    ]
+  }
+}
