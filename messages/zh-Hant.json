@@ -25,30 +25,8 @@
     "supportText": "如果您發現此工具有幫助，請考慮給我買咖啡！"
   },
   "meta": {
-    "title": "大模型推理顯存與GPU計算器 | 硬體需求估算",
+    "title": "大模型顯存與GPU計算器 | 硬體需求",
     "description": "計算大語言模型所需的GPU顯存和數量，支持NVIDIA、AMD、Apple M系列和華為昇騰等多種GPU類型。",
-    "keywords": [
-      "大模型",
-      "顯存計算器",
-      "GPU數量計算",
-      "LLM推理",
-      "推理顯存",
-      "GPU內存",
-      "大語言模型",
-      "參數量",
-      "量化精度",
-      "NVIDIA GPU",
-      "AMD GPU",
-      "Apple M系列",
-      "華為昇騰",
-      "DeepSeek-R1",
-      "DeepSeek-V3",
-      "Qwen",
-      "Llama",
-      "FP16",
-      "INT8",
-      "INT4",
-      "大模型推理硬體計算器"
-    ]
+    "keywords": "大模型,顯存計算器,GPU數量,推理,NVIDIA,AMD,華為昇騰,量化精度"
   }
 }

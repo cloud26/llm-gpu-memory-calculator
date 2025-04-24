@@ -28,6 +28,19 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'index, follow',
+          },
+        ],
+      },
+    ];
+  },
 }
 
 mergeConfig(nextConfig, userConfig)

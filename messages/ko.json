@@ -27,27 +27,6 @@
   "meta": {
     "title": "LLM 추론 메모리 & GPU 계산기 | 하드웨어 요구사항",
     "description": "대규모 언어 모델에 필요한 GPU 메모리와 수량을 계산. NVIDIA, AMD, Apple M 시리즈, Huawei Ascend 등 다양한 GPU 유형 지원.",
-    "keywords": [
-      "대규모 언어 모델",
-      "메모리 계산기",
-      "GPU 수 계산",
-      "LLM 추론",
-      "GPU 메모리",
-      "추론 리소스",
-      "정밀도",
-      "양자화",
-      "NVIDIA GPU",
-      "AMD GPU",
-      "Apple M 시리즈",
-      "Huawei Ascend",
-      "DeepSeek-R1",
-      "DeepSeek-V3",
-      "Qwen",
-      "Llama",
-      "FP16",
-      "INT8",
-      "INT4",
-      "LLM 추론 하드웨어 계산기"
-    ]
+    "keywords": "언어 모델,메모리 계산기,GPU 수,추론,NVIDIA,AMD,Apple M,양자화"
   }
 }

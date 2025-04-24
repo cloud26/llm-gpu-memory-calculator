@@ -26,6 +26,14 @@ export function generateMetadata({ params: { locale } }: { params: { locale: str
         title,
         description,
         metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+              index: true,
+              follow: true,
+            },
+        },
         openGraph: {
             title,
             description,

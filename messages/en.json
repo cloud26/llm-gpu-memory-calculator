@@ -25,29 +25,8 @@
     "supportText": "If you find this tool helpful, consider buying me a coffee!"
   },
   "meta": {
-    "title": "LLM Inference Memory & GPU Calculator | Hardware Requirements",
+    "title": "LLM Memory & GPU Calculator | Hardware Requirements",
     "description": "Calculate GPU memory and count for large language models, supporting various GPU types including NVIDIA, AMD, Apple M-series, and Huawei Ascend.",
-    "keywords": [
-      "large language model",
-      "memory calculator",
-      "GPU count calculator",
-      "LLM inference",
-      "GPU memory",
-      "inference resources",
-      "precision",
-      "quantization",
-      "NVIDIA GPU",
-      "AMD GPU",
-      "Apple M-series",
-      "Huawei Ascend",
-      "DeepSeek-R1",
-      "DeepSeek-V3",
-      "Qwen",
-      "Llama",
-      "FP16",
-      "INT8",
-      "INT4",
-      "llm inference hardware calculator"
-    ]
+    "keywords": "LLM, memory calculator, GPU memory, model inference, NVIDIA, AMD, Apple M, quantization"
   }
 }

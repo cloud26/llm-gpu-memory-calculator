@@ -27,27 +27,6 @@
   "meta": {
     "title": "LLM推論メモリ＆GPU計算機 | ハードウェア要件",
     "description": "大規模言語モデルに必要なGPUメモリと数を計算。NVIDIA、AMD、Apple Mシリーズ、Huawei Ascendなど様々なGPUタイプに対応。",
-    "keywords": [
-      "大規模言語モデル",
-      "メモリ計算機",
-      "GPU数計算",
-      "LLM推論",
-      "GPUメモリ",
-      "推論リソース",
-      "精度",
-      "量子化",
-      "NVIDIA GPU",
-      "AMD GPU",
-      "Apple Mシリーズ",
-      "Huawei Ascend",
-      "DeepSeek-R1",
-      "DeepSeek-V3",
-      "Qwen",
-      "Llama",
-      "FP16",
-      "INT8",
-      "INT4",
-      "LLM推論ハードウェア計算機"
-    ]
+    "keywords": "言語モデル,メモリ計算機,GPU数,推論,NVIDIA,AMD,Apple M,量子化"
   }
 }
