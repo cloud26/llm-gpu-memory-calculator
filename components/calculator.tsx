@@ -18,6 +18,17 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, Command
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { useParams } from "next/navigation"
 
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            'stripe-buy-button': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & {
+                'buy-button-id': string;
+                'publishable-key': string;
+            }, HTMLElement>;
+        }
+    }
+}
+
 export default function Calculator() {
     const t = useTranslations();
     const router = useRouter();
@@ -278,18 +289,12 @@ export default function Calculator() {
 
                 <footer className="py-6 text-center">
                     <p className="text-gray-600 mb-3">{t('footer.supportText')}</p>
-                    <a
-                        href="https://www.buymeacoffee.com/pengpeng"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block hover:opacity-90 transition-opacity"
+                    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                        buy-button-id="buy_btn_1RQQw5Jvp88KT6U5dcmk1T5G"
+                        publishable-key="pk_live_51NUHpCJvp88KT6U5xFSi9rxb0rYdEX4iRDfEm75Lx12YEtrDI3lFbAFz27TPmT4aarIAZXxMRnVDVMB9QdnJhfUG00ryIEIiIw"
                     >
-                        <img
-                            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                            alt="Buy Me A Coffee"
-                            className="h-[60px] w-[217px]"
-                        />
-                    </a>
+                    </stripe-buy-button>
                 </footer>
             </div>
         </TooltipProvider>
