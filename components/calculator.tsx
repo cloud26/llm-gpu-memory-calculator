@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Check, ChevronsUpDown, InfoIcon } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
@@ -33,6 +33,34 @@ export default function Calculator() {
     const gpuMemory = selectedGpu ? selectedGpu.memory : 80 // 默认使用 80GB
 
     const memory = calculateInferenceMemory(Number(parameters), precision, gpuMemory)
+
+    // 添加日志记录函数
+    const logCalculation = async () => {
+        try {
+            await fetch('/api/log', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    parameters: Number(parameters),
+                    precision,
+                    gpuModel,
+                    gpuMemory,
+                    totalMemory: memory.totalMemory,
+                    requiredGPUs: memory.requiredGPUs,
+                    locale: params.locale
+                }),
+            });
+        } catch (error) {
+            console.error('Failed to log calculation:', error);
+        }
+    };
+
+    // 在计算结果更新时记录日志
+    useEffect(() => {
+        logCalculation();
+    }, [parameters, precision, gpuModel, memory]);
 
     const handleParameterChange = (value: string) => {
         setParameters(value.replace(/[^0-9.]/g, ""))
