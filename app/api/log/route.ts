@@ -5,9 +5,7 @@ export async function POST(request: Request) {
         const data = await request.json()
         const { parameters, precision, gpuModel, gpuMemory, totalMemory, requiredGPUs, locale } = data
 
-        // 记录日志（添加时间戳）
-        const timestamp = new Date().toISOString()
-        console.log(`[${timestamp}] [服务端日志] [${locale}] 计算GPU数量 - 参数: ${parameters}B, 精度: ${precision}, GPU型号: ${gpuModel}, GPU显存: ${gpuMemory}GB, 总内存: ${totalMemory}GB, 所需GPU: ${requiredGPUs}个`)
+        console.log(`[${locale}] 计算GPU数量 - 参数: ${parameters}B, 精度: ${precision}, GPU型号: ${gpuModel}, GPU显存: ${gpuMemory}GB, 总内存: ${totalMemory}GB, 所需GPU: ${requiredGPUs}个`)
 
         return NextResponse.json({ success: true })
     } catch (error) {
